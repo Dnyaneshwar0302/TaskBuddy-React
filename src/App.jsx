@@ -4,9 +4,9 @@ import "./App.css";
 
 import Header from "./Components/Header";
 import TaskForm from "./Components/TaskForm";
-import SearchBar from "./Components/SearchBar";
-import FilterBar from "./Components/FilterBar";
-import ProgressBar from "./Components/ProgressBar";
+import SearchBar from "./Components/SearchBarTemp";
+import FilterBar from "./Components/FilterBarTemp";
+import ProgressBar from "./Components/ProgressBarTemp";
 import TaskList from "./Components/TaskList";
 
 function App() {
