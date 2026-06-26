@@ -1,0 +1,213 @@
+.header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:25px;
+
+    background:linear-gradient(
+        135deg,
+        #2563EB,
+        #4F46E5
+    );
+
+    color:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    margin-bottom:30px;
+
+    box-shadow:
+        0 15px 40px rgba(37,99,235,.35);
+
+    animation:slideDown .8s ease;
+
+    position:relative;
+
+    transition:.4s;
+}
+
+.logo{
+
+    width:85px;
+
+    height:85px;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#2563EB;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:42px;
+
+    font-weight:bold;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.2);
+}
+
+.header-content{
+
+    text-align:left;
+}
+
+.header-content h1{
+
+    font-size:46px;
+
+    font-weight:700;
+
+    margin-bottom:5px;
+}
+
+.header-content p{
+
+    font-size:20px;
+
+    margin-bottom:8px;
+
+    font-weight:500;
+}
+
+.header-content span{
+
+    opacity:.9;
+
+    font-size:15px;
+
+    letter-spacing:1px;
+}
+
+/* ========================= */
+/* Theme Toggle Button */
+/* ========================= */
+
+.theme-toggle{
+
+    position:absolute;
+
+    top:25px;
+
+    right:25px;
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:white;
+
+    color:#2563EB;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+
+}
+
+.theme-toggle:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+
+}
+
+/* ========================= */
+/* Dark Header */
+/* ========================= */
+
+body.dark .header{
+
+    background:linear-gradient(
+        135deg,
+        #111827,
+        #1F2937
+    );
+
+}
+
+body.dark .theme-toggle{
+
+    background:#334155;
+
+    color:white;
+
+}
+
+body.dark .logo{
+
+    background:#F8FAFC;
+
+}
+
+@keyframes slideDown{
+
+from{
+
+opacity:0;
+
+transform:translateY(-30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ========================= */
+/* Mobile */
+/* ========================= */
+
+@media(max-width:768px){
+
+.header{
+
+flex-direction:column;
+
+text-align:center;
+
+padding-top:70px;
+
+}
+
+.header-content{
+
+text-align:center;
+
+}
+
+.theme-toggle{
+
+top:20px;
+
+right:20px;
+
+}
+
+}

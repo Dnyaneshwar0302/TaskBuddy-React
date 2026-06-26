@@ -1,0 +1,203 @@
+.task-form-card{
+
+    background:var(--card);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    margin-bottom:30px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.task-form-card h2{
+
+    color:var(--text);
+
+    margin-bottom:25px;
+
+    font-size:28px;
+
+}
+
+.task-input-group{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+}
+
+.task-input-group input{
+
+    flex:1;
+
+    padding:16px;
+
+    border:2px solid #dbeafe;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:16px;
+
+    transition:.3s;
+
+    background:var(--card);
+
+    color:var(--text);
+
+}
+
+.task-input-group input::placeholder{
+
+    color:var(--text-light);
+
+}
+
+.task-input-group input:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 12px rgba(37,99,235,.2);
+
+}
+
+.task-input-group button{
+
+    padding:16px 28px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.task-input-group button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(37,99,235,.35);
+
+}
+
+.task-options{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+.option{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.option label{
+
+    margin-bottom:8px;
+
+    color:var(--text-light);
+
+    font-weight:600;
+
+}
+
+.option select,
+
+.option input{
+
+    padding:14px;
+
+    border-radius:10px;
+
+    border:2px solid #dbeafe;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    background:var(--card);
+
+    color:var(--text);
+
+}
+
+.option select:focus,
+
+.option input:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 10px rgba(37,99,235,.2);
+
+}
+
+/* ============================= */
+/* Dark Mode */
+/* ============================= */
+
+body.dark .task-input-group input,
+
+body.dark .option select,
+
+body.dark .option input{
+
+    border-color:#334155;
+
+}
+
+body.dark .task-input-group input:focus,
+
+body.dark .option select:focus,
+
+body.dark .option input:focus{
+
+    border-color:#3B82F6;
+
+}
+
+/* ============================= */
+
+@media(max-width:768px){
+
+.task-input-group{
+
+flex-direction:column;
+
+}
+
+.task-options{
+
+grid-template-columns:1fr;
+
+}
+
+}

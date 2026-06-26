@@ -1,0 +1,151 @@
+.filter-card{
+
+    background:var(--card);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin-bottom:30px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.filter-title{
+
+    margin-bottom:20px;
+
+}
+
+.filter-title h2{
+
+    color:var(--text);
+
+    font-size:28px;
+
+    margin-bottom:5px;
+
+}
+
+.filter-title p{
+
+    color:var(--text-light);
+
+    font-size:15px;
+
+}
+
+.filter-options{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.filter-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.filter-item label{
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:var(--text-light);
+
+}
+
+.filter-item select{
+
+    padding:14px;
+
+    border:2px solid #DBEAFE;
+
+    border-radius:12px;
+
+    outline:none;
+
+    background:var(--card);
+
+    color:var(--text);
+
+    font-size:15px;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.filter-item select:hover{
+
+    border-color:#2563EB;
+
+}
+
+.filter-item select:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 12px rgba(37,99,235,.2);
+
+}
+
+/* ============================= */
+/* Dark Mode */
+/* ============================= */
+
+body.dark .filter-card{
+
+    background:var(--card);
+
+    box-shadow:var(--shadow);
+
+}
+
+body.dark .filter-item select{
+
+    border-color:#334155;
+
+    background:var(--card);
+
+    color:var(--text);
+
+}
+
+body.dark .filter-item select:focus{
+
+    border-color:#3B82F6;
+
+}
+
+@media(max-width:900px){
+
+.filter-options{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.filter-options{
+
+grid-template-columns:1fr;
+
+}
+
+}

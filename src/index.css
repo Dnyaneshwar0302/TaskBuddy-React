@@ -1,0 +1,150 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ============================= */
+/* CSS Variables */
+/* ============================= */
+
+:root{
+
+  --bg:#F3F6FB;
+
+  --card:#ffffff;
+
+  --text:#1E293B;
+
+  --text-light:#64748B;
+
+  --primary:#2563EB;
+
+  --secondary:#4F46E5;
+
+  --shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+/* ============================= */
+/* Dark Theme */
+/* ============================= */
+
+body.dark{
+
+  --bg:#0F172A;
+
+  --card:#1E293B;
+
+  --text:#F8FAFC;
+
+  --text-light:#CBD5E1;
+
+  --primary:#3B82F6;
+
+  --secondary:#6366F1;
+
+  --shadow:0 12px 35px rgba(0,0,0,.45);
+
+}
+
+/* ============================= */
+
+*{
+
+  margin:0;
+
+  padding:0;
+
+  box-sizing:border-box;
+
+  font-family:"Poppins",sans-serif;
+
+}
+
+/* ============================= */
+
+html{
+
+  scroll-behavior:smooth;
+
+}
+
+/* ============================= */
+
+body{
+
+  background:var(--bg);
+
+  color:var(--text);
+
+  transition:.4s;
+
+}
+
+/* ============================= */
+
+#root{
+
+  width:100%;
+
+}
+
+/* ============================= */
+
+.container{
+
+  max-width:1200px;
+
+  margin:auto;
+
+  padding:40px 20px;
+
+}
+
+/* ============================= */
+
+button{
+
+  font-family:inherit;
+
+}
+
+/* ============================= */
+
+input,
+select,
+textarea,
+button{
+
+  outline:none;
+
+}
+
+/* ============================= */
+
+::-webkit-scrollbar{
+
+  width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+  background:#2563EB;
+
+  border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+  background:#E2E8F0;
+
+}
+
+/* ============================= */
+
+body.dark::-webkit-scrollbar-track{
+
+  background:#1E293B;
+
+}
